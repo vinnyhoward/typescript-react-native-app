@@ -1,9 +1,9 @@
 # Typescript React Native Set-Up Demo
 
-In your terminal, cd into your project folder of choice and type in 
+0. In your terminal, cd into your project folder of choice and type in 
 ```exp init typescript-react-native-app```
 
-We will need two dependencies and in order to install it you have to open up your ```package.json``` file and add the following
+1. We will need two dependencies and in order to install it you have to open up your ```package.json``` file and add the following
 
 ```"name": "typescript-react-native-app",```
 
@@ -25,7 +25,7 @@ So your ```package.json``` should look like this:
 }
 ```
 
-In your root folder of your project file you will need to: 
+2. In your root folder of your project file you will need to: 
 
 ```yarn add -D react-native-typescript-transformer typescript```
 
@@ -82,24 +82,24 @@ So your ```app.json folder should look like this:
 
 ```
 
-The next step is to change the extensions for your ```App.js``` file to ```App.ts```
+3. The next step is to change the extensions for your ```App.js``` file to ```App.ts```
 
 ```
 mv App.js App.tsx
 ```
 
-Open up your ```App.tsx``` file and change your react import into:
+4. Open up your ```App.tsx``` file and change your react import into:
 
 ```
 import * as React from 'react';
 ```
 
-Next in our terminal we will initialize the tsx file with: 
+5. Next in our terminal we will initialize the tsx file with: 
 ```
 npx tsc --init
 ```
 
-Open up the the ```tsconfig.json``` that was created from ```npx tsc --init``` and change your ```jsx: "preserve"``` too ```jsx: "react-native"``` 
+6. Open up the the ```tsconfig.json``` that was created from ```npx tsc --init``` and change your ```jsx: "preserve"``` too ```jsx: "react-native"``` 
 
 Next, we will open up our ```package.json``` folder and add these two scripts:
 ```
@@ -136,4 +136,4 @@ So your ```package.json``` will look like this:
 
 ```
 
-Next
+7. Now you're ready! Go ahead and run ```npm start``` and you will be given a URL and you may use your phone or simulator. Happy Coding!
